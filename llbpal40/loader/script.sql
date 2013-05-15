@@ -1,0 +1,1 @@
+INSERT OVERWRITE DIRECTORY '${OUTPUT}' SELECT * FROM pos_rows where transaction_id < 1415474 and transaction_id > 15474;

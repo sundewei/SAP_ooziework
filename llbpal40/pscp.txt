@@ -1,0 +1,2 @@
+pscp -r C:\projects\oozieWork\llbpal40\loaderWithSqoop hduser@llbpal40:/home/hduser/dewei/oozie/work/
+

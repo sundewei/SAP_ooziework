@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property>
+        <name>user.name</name>
+        <value>hduser</value>
+    </property>
+	
+	<property>
+        <name>nameNode</name>
+        <value>hdfs://llbpal40.pal.sap.corp:8020</value>
+    </property>
+	
+	<property>
+        <name>jobTracker</name>
+        <value>llbpal40.pal.sap.corp:54311</value>
+    </property>
+	
+	<property>
+        <name>queueName</name>
+        <value>default</value>
+    </property>
+	
+	<property>
+        <name>oozieHdfsHome</name>
+        <value>/user/oozie/work/loaderWithSqoop</value>
+    </property>
+	
+    <property>
+        <name>oozie.wf.application.path</name>
+        <value>${nameNode}${oozieHdfsHome}</value>
+    </property> 
+	
+	<property>
+        <name>hiveDefaultXml</name>
+        <value>${oozieHdfsHome}/hiveConf/hive-default.xml</value>
+    </property>
+	
+	<property>
+        <name>hiveSiteXml</name>
+        <value>${oozieHdfsHome}/hiveConf/hive-site.xml</value>
+    </property>
+	
+	<property>
+        <name>hiveOutPath</name>
+        <value>${oozieHdfsHome}/hiveOut</value>
+    </property>
+	
+	<property>
+        <name>hanaTargetTable</name>
+        <value>SYSTEM.POS_ROWS_SS</value>
+    </property>
+	
+	<property>
+        <name>hanaConnectionString</name>
+        <value>jdbc:sap://lspal134.pal.sap.corp:31015/</value>
+    </property>
+	
+	<property>
+        <name>hanaJdbcDriver</name>
+        <value>com.sap.db.jdbc.Driver</value>
+    </property>
+	
+	<property>
+        <name>hanaUsername</name>
+        <value>SYSTEM</value>
+    </property>
+	
+	<property>
+        <name>hanaPassword</name>
+        <value>Hana1234</value>
+    </property>
+			
+	<property>
+        <name>hiveUdfJar</name>
+        <value>/user/oozie/work/loaderWithSqoop/lib/sap_hadoop_example.jar</value>
+    </property>
+	
+	<property>
+        <name>oozie.use.system.libpath</name>
+        <value>true</value>
+    </property>
+
+</configuration>
